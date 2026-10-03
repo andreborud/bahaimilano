@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <a class="skip" href="#main">Vai al contenuto</a>
+    <header class="site-header wrap">
+        <a class="brand" href="{{@site.url}}" aria-label="Bahá’í Milano, pagina iniziale"><img src="{{asset "images/brand-mark.svg"}}" alt=""><span class="brand-name">Bahá’í <small>Milano</small></span></a>
+        <nav aria-label="Navigazione principale">{{navigation}}</nav>
+    </header>
+    <main id="main">{{{body}}}</main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="{{@site.url}}"><img src="{{asset "images/brand-mark.svg"}}" alt=""><span class="brand-name">Bahá’í <small>Milano</small></span></a>
+            <a href="https://www.bahai.it/" target="_blank" rel="noopener">Comunità bahá’í d’Italia ↗</a>
+        </div>
+    </footer>
+    {{ghost_foot}}
+</body>
+</html>

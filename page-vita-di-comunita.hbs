@@ -1,0 +1,8 @@
+{{!< default}}
+{{#post}}
+<article class="page wrap">
+    <header class="page-header"><p class="eyebrow">BAHÁ’Í · MILANO</p><h1>{{title}}</h1>{{#if custom_excerpt}}<p class="lead">{{custom_excerpt}}</p>{{/if}}</header>
+    {{#if feature_image}}<figure class="page-image"><img src="{{img_url feature_image size="hero"}}" alt="{{feature_image_alt}}"></figure>{{/if}}
+    <div class="gh-content">{{content}}</div>
+</article>
+{{/post}}

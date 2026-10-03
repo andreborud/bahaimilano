@@ -1,0 +1,27 @@
+{
+  "name": "bahai-milano",
+  "version": "0.1.0",
+  "description": "Ghost theme for the Bahá’í community of Milan",
+  "engines": {
+    "ghost": ">=6.0.0"
+  },
+  "author": {
+    "name": "Comunità bahá’í di Milano",
+    "email": "editor@bahaimilano.test"
+  },
+  "config": {
+    "posts_per_page": 9,
+    "image_sizes": {
+      "card": {
+        "width": 720
+      },
+      "hero": {
+        "width": 1600
+      }
+    },
+    "card_assets": true
+  },
+  "keywords": [
+    "ghost-theme"
+  ]
+}
