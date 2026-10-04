@@ -23,5 +23,12 @@
   },
   "keywords": [
     "ghost-theme"
-  ]
+  ],
+  "scripts": {
+    "check": "gscan .",
+    "zip": "python3 scripts/package.py"
+  },
+  "devDependencies": {
+    "gscan": "6.6.1"
+  }
 }
