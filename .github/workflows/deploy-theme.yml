@@ -1,0 +1,28 @@
+name: Deploy Theme
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run zip
+
+      - name: Deploy Ghost Theme
+        uses: TryGhost/action-deploy-theme@v1
+        with:
+          file: dist/bahai-milano.zip
+          api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
+          api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
